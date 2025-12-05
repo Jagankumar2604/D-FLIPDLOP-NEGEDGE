@@ -31,13 +31,13 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
    1. Define Inputs/Outputs: Inputs: D (data), c1k (clock); Outputs: Q, Qbar (~Q).
     
-    2.Initialization: Set Q = 0 and Qbar = 1 at the start of the simulation.
+   2.Initialization: Set Q = 0 and Qbar = 1 at the start of the simulation.
    
-    3.D Flip-Flop Logic: On the positive edge of c1k, assign Q = D.
+ 3.D Flip-Flop Logic: On the positive edge of c1k, assign Q = D.
+ 
+ 4.Complementary Output: Update Qbar = ~D to maintain complementarity.
     
-    4.Complementary Output: Update Qbar = ~D to maintain complementarity.
-    
-    5.Testbench: Test with various D and c1k values to verify data storage functionality.
+ 5.Testbench: Test with various D and c1k values to verify data storage functionality.
 
 
 **PROGRAM**
@@ -70,7 +70,8 @@ endmodule
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![Uploading 391823878-4ddec297-8a03-4d92-8601-826a237273b1.png…]()
+<img width="1921" height="1201" alt="391823878-4ddec297-8a03-4d92-8601-826a237273b1-1" src="https://github.com/user-attachments/assets/768622c3-4287-4432-add0-435df8428831" />
+
 
 
 **RESULTS**
